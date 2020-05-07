@@ -1,12 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Covid from './components/Covid';
+import Indo from './components/Indo';
+import Greeting from './components/Greeting';
+import Totalindo from './components/Totalindo';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+
+class App extends Component {
+  constructor(){
+    super();
+    }
+
+
+  ComponentDidMount() {
+
+  }
+  
+
+  render() {
+    return(
+      <View>
+        <Greeting></Greeting>
+        <Covid></Covid>
+        <Totalindo></Totalindo>
+        <Indo></Indo>
+      </View>
+
+    )
+  }
 }
 
 const styles = StyleSheet.create({
@@ -17,3 +38,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
