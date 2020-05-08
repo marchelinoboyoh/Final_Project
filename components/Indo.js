@@ -53,9 +53,9 @@ getDataGlobal = async () => {
 render(){
     return (
         <View>
-         <View style={{ flex: 1, marginTop: -15, marginBottom: -20 }}></View>
+         <View style={{ flex: 1, marginTop: -25, marginBottom: -25 }}></View>
          <Text style={{ alignSelf: 'center', fontSize: 25, fontWeight: 'bold' }}>Indonesia</Text>
-         <View style={{ flex: 1, marginTop: 70, marginBottom: 35 }}></View>
+         <View style={{ flex: 1, marginTop: 60, marginBottom: 50 }}></View>
           <View>
             <FlatList 
                 data={this.state.coviddata.Data}
